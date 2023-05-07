@@ -1,7 +1,5 @@
-/* Creates classes with different width */
+// Columns and operators
 
-@for $item from 1 through 4 {
-  .col-#{$item} {
-    width: 100% / $item;
-  }
+@for $i from 1 through 4 {
+    .col-#{$i} { width: 100%/4 * $i; }
 }
